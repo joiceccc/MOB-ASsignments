@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "BFFA205709CCF1CD65D5AAF973FFF1BC2EC75E8F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "220E1542E4A6CD7C7E1F98266D7B226F9D65E8AC" : 0,
+    "BFFA205709CCF1CD65D5AAF973FFF1BC2EC75E8F" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "68C8E25D-BFD4-411D-B8D6-F864C60C7C57",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "220E1542E4A6CD7C7E1F98266D7B226F9D65E8AC" : "MOB-HK-1%20(course%20materials)",
+    "BFFA205709CCF1CD65D5AAF973FFF1BC2EC75E8F" : "MOB-HK-2%20(course%20materials)\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Homework1",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Homework\/01\/Homework1\/Homework1.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:ga-students\/MOB-HK-1.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "220E1542E4A6CD7C7E1F98266D7B226F9D65E8AC"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:ga-students\/MOB-HK-2.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BFFA205709CCF1CD65D5AAF973FFF1BC2EC75E8F"
+    }
+  ]
+}
