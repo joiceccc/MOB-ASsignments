@@ -3,18 +3,23 @@ import UIKit
 
 class SecondViewController: UIViewController {
    
-    var number:Int = 0
+    var num:Int = 0
     
     @IBOutlet weak var numbertext: UITextField!
     @IBAction func addbutton(sender: AnyObject) {
         
         
-         number =  number + Int(numbertext.text!)!
-        
-        resultlabel.text = String(number)
+        var add = Int(numbertext.text!)
         
         
+        if let number = add {
+            
+        num = num + number
         
+        resultlabel.text = String(num)
+        
+        
+        } else { resultlabel.text = "not a number" }
         
     }
     

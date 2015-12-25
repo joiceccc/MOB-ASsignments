@@ -11,12 +11,15 @@ class ThirdViewController: UIViewController {
     
     
     @IBAction func calculate(sender: AnyObject) {
-        var numbers:Int = Int(numbertext.text!)!
         
+        
+        var result = Int(numbertext.text!)
+        
+        if let number = result {
        
-        if (numbers%2 == 0) { evenodd.text = "Even" }
-        else { evenodd.text = "Odd"}
-            
+            if (number%2 == 0) { evenodd.text = "Even" }
+            else { evenodd.text = "Odd"}
+        } else { evenodd.text = " not a number" }
         
         
     }
