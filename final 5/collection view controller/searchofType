@@ -1,0 +1,107 @@
+//
+//  searchtypeofartViewController.swift
+//  collection view controller
+//
+//  Created by Joyce Cheung on 9/12/15.
+//  Copyright © 2015 Joyce Cheung. All rights reserved.
+//
+
+import UIKit
+import Parse
+
+class searchtypeofartViewController: UIViewController , UICollectionViewDelegate, UICollectionViewDataSource {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        searchcollection.dataSource = self
+        searchcollection.delegate = self
+        // Do any additional setup after loading the view.
+    }
+
+  
+//    @IBAction func search(sender: AnyObject) {
+//        
+//        
+//        var searchtext = searchtextbox.text
+////        query.findObjectsInBackgroundWithBlock({ (objects, error) -> Void in
+////
+//        let query = PFQuery(className: "Photo")
+//        query.whereKey("caption", containsString: searchtext)
+//        
+//        
+    
+    }
+    
+    
+    
+    
+    let typesofart = ["Home Cooking", "Poster", "Illustration", "leaflet"]
+    
+    let imageArray = [UIImage(named: "home cooking.jpg"), UIImage(named: "poster.jpg"), UIImage(named: "illustration 2.jpg"), UIImage(named: "leaflet.jpg")]
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        print("rows")
+        print(self.typesofart.count)
+        return self.typesofart.count
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = searchcollection.dequeueReusableCellWithReuseIdentifier("identifier", forIndexPath: indexPath) as! seachcollectionviewcell
+        cell.images?.image = self.imageArray[indexPath.row]
+        cell.label.text = self.typesofart[indexPath.row]
+       
+        
+//        let cell2 = searchcollection.dequeueReusableCellWithReuseIdentifier("identifier2", forIndexPath: indexPath)
+//        
+//        cell2.image?.image = self.imageArray[(indexPath + 1).row]
+//        
+//        print(indexPath.row)
+        return cell
+    }
+    
+    
+    
+    
+  
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        self.performSegueWithIdentifier("showsearch", sender: self)
+
+    }
+    
+    
+    
+//    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+//        self.performSegueWithIdentifier("showsearch", sender: self)
+//    }
+//    
+//    
+  
+    
+    
+    
+    
+    
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+
+    */
+
+    
+    
+    
+    
+}
